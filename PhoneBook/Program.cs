@@ -14,33 +14,33 @@ namespace PhoneBook
             while (true)
             {
                 Console.WriteLine("");
+                Console.WriteLine("####################################");
                 Console.WriteLine("1 - Add Contact");
                 Console.WriteLine("2 - Show Contact by Number");
                 Console.WriteLine("3 - Show All Contacts");
                 Console.WriteLine("4 - Search Contacts by Name");
                 Console.WriteLine("0 - Exit");
+                Console.WriteLine("####################################");
                 Console.WriteLine("");
 
                 Console.WriteLine("Please enter the number of the action: ");
                 string? input = Console.ReadLine();
 
+                Console.Clear(); // Clear the console
+
                 switch (input)
                 {
                     case "1":
                         AddContact();
-                        Console.Clear();
                         break;
                     case "2":
                         ShowContactByNumber();
-                        Console.Clear();
                         break;
                     case "3":
                         ShowAllContacts();
-                        Console.Clear();
                         break;
                     case "4":
                         SearchContactsByName();
-                        Console.Clear();
                         break;
                     case "0":
                         Console.WriteLine("Exiting...");
